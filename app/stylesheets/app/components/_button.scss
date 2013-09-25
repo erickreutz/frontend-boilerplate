@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  margin-bottom: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background: #fff;
+  padding: 3px 20px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  @include font-size(11px, false);
+  @include appearance(none);
+  @extend %font-smoothing;
+
+  &:active {
+    @include transform(translateY(1px));
+  }
+}
